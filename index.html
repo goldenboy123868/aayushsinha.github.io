@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electrical Engineering Portfolio - Controls & Embedded Systems">
+    <title>Aayush Sinha | Engineering Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Aayush Aryaman Sinha</h1>
+        <p class="tagline">Electrical and Computer Engineering | University of Washington</p>
+        <div class="cta-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-photo">
+                <img src="images/profile.jpg" alt="Aayush">
+            </div>
+            <div class="bio">
+                <p>
+                Hello and welcome to my portfolio website! This is the best place to learn more about me and my professional experience. I am a sophomore Electrical and Computer Engineering student at the University of Washington, with a focus on Embedded and Control Systems Engineering.
+                </p>
+                <p>
+                I am also a member of UW's 
+                <a href="https://etruck.webflow.io/" target="_blank" rel="noopener noreferrer">ETruck team</a>
+                as an HMI Engineer, where I work alongside a team of 60+ engineers to convert a Peterbilt 337 diesel truck into a fully electric vehicle. Being part of this team has given me valuable hands-on experience and has significantly strengthened my collaboration and teamwork skills.
+                </p>
+                <p>
+                In the coming years, I hope to further explore control systems and VLSI through coursework and projects offered at UW.
+                </p>
+
+                <h3 style="margin-top: 2rem;">Talk to me about</h3>
+                <p>Formula 1, workplace drama shows, Collecting trading cards, poker, and interests beyond engineering.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects and Organizations</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+            <div class="project-image">
+                <img src="images/project1.jpg" alt="E-Truck">
+            </div>
+                <h3>E-Truck Challenge at UW</h3>
+                <div class="project-tags">
+                    <span class="tag">Raptor Dev</span>
+                    <span class="tag">Simulink</span>
+                    <span class="tag">Control Systems</span>
+                    <span class="tag">J1939</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Challenge:</strong> The E-Truck RSO at UW is a team of motivated engineers taking on the ambitious challenge of converting a class 7 diesel truck into a fully working Electric truck</p>
+                    <p><strong>Role:</strong> Human Machine Interface Engineer</p>
+                </div>
+                <div class="project-links">
+                    <a href="javascript:void(0)" class="project-link" onclick="openModal('project1')">Read More →</a>
+                    <a href="https://etruck.webflow.io/" target="_blank" class="project-link">E-Truck Website →</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/project2.png" alt="CAN Fan Control">
+                </div>
+                <h3>CAN-Based Fan Control System</h3>
+                <div class="project-tags">
+                    <span class="tag">CANalyzer</span>
+                    <span class="tag">Raptor Dev</span>
+                    <span class="tag">Simulink</span>
+                    <span class="tag">ECUs</span>
+                    <span class="tag">CANbd++</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Problem:</strong> Validate reliable CAN communication for controlling vehicle hardware while ensuring consistent signal behavior and ECU integration.</p>
+
+                    <p><strong>Role:</strong> Built and tested CAN message structures, wrote CAPL scripts for control and validation, and implemented Simulink-based logic to enable user-driven fan control.</p>
+
+                </div>
+                <div class="project-links">
+                    <a href="javascript:void(0)" class="project-link" onclick="openModal('project2')">Read More →</a>
+                    <a href="#" class="project-link">GitHub →</a>
+                </div>
+            </div>
+
+<!-- Project 3 -->
+<div class="project-card">
+    <div class="project-image">
+        <img src="images/project3.png" alt="Cabin Test Bench">
+    </div>
+
+    <h3>Cabin Test Bench (In progress)</h3>
+
+    <div class="project-tags">
+        <span class="tag">Signal Mapping</span>
+        <span class="tag">Simulink</span>
+        <span class="tag">HIL/SIL</span>
+    </div>
+
+    <div class="project-details">
+            <p>
+            <strong>Goal:</strong> Reverse-engineer the truck’s steering column controls to enable custom implementation without existing documentation.
+            </p>
+
+            <p>
+            <strong>How:</strong> Performed continuity testing to identify ground references and control signals, then validated behavior using a simple test circuit.
+            </p>
+
+
+    </div>
+
+    <div class="project-links">
+        <a href="javascript:void(0)"
+           class="project-link"
+           onclick="openModal('project3')">
+            Read More →
+        </a>
+        <a href="#" class="project-link">GitHub →</a>
+    </div>
+</div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Modal for Project 1 -->
+    <div id="project1" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project1')">&times;</span>
+            
+            <h2>E-Truck Challenge at UW</h2>
+            
+            <div class="modal-tags">
+                <span class="tag">Raptor Dev</span>
+                <span class="tag">Simulink</span>
+                <span class="tag">Control Systems</span>
+                <span class="tag">J1939</span>
+            </div> 
+            
+            <!-- Image Carousel -->
+            <div class="modal-carousel">
+                <button class="carousel-btn prev" onclick="changeSlide('project1', -1)">‹</button>
+                
+                <div class="carousel-images">
+                    <img src="images/project1.jpg" alt="E-Truck 1" class="carousel-image active">
+                </div>
+                
+                <button class="carousel-btn next" onclick="changeSlide('project1', 1)">›</button>
+                
+                <!-- Dots indicator -->
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide('project1', 0)"></span>
+                    <span class="dot" onclick="currentSlide('project1', 1)"></span>
+                    <span class="dot" onclick="currentSlide('project1', 2)"></span>
+                    <span class="dot" onclick="currentSlide('project1', 3)"></span>
+                </div>
+            </div>
+            
+            <div class="modal-body">
+                <h3>The Challenge</h3>
+                <p>The E-Truck RSO at UW is a team of motivated engineers taking on the ambitious challenge of converting a class 7 diesel truck into a fully working Electric truck. This isn't just a prototype - we're building a functional vehicle that will demonstrate the viability of electric heavy-duty transportation.</p>
+                
+                <h3>My Role</h3>
+                <p>As the Human Machine Interface Engineer, I'm responsible for everything inside the cabin that the driver will interact with. This includes designing and implementing the entire driver experience from the ground up. (Yes that means we have to deal with all these wires)</p>
+                
+                <h3>The Vision</h3>
+                <p>We're transforming the cabin's wiring mess into a sleek, modern interface. Using Samsung tablets, we're implementing both the instrument cluster (dash) and center console. This involves integrating critical systems like:</p>
+                <ul>
+                    <li>Turn signals and lighting controls</li>
+                    <li>HVAC system management</li>
+                    <li>Regenerative braking control</li>
+                    <li>Battery management display</li>
+                    <li>Vehicle diagnostics and monitoring</li>
+                </ul>
+                
+                <h3>Technical Implementation</h3>
+                <p>The project involves working with J1939 CAN bus protocols to communicate with various vehicle systems. We're using Raptor Dev for rapid prototyping and Simulink for control system design and testing. The challenge is integrating modern tablet interfaces with industrial-grade vehicle systems while maintaining reliability and safety standards.</p>
+                
+                <h3>Challenges & Solutions</h3>
+                <p>One of the biggest challenges has been reverse-engineering the existing truck systems and creating a robust communication protocol between our custom HMI and the vehicle's electrical systems. We've had to balance user experience design with the harsh requirements of a commercial vehicle environment.</p>
+                
+                <h3>Impact & Results</h3>
+                <p>This project is pushing the boundaries of electric vehicle technology in the heavy-duty sector. Our work directly contributes to reducing emissions in commercial transportation, and the skills I'm developing - from embedded systems to UX design - are invaluable for my career in controls and embedded systems.</p>
+                
+                <h3>What I'm Learning</h3>
+                <p>Working on this project has given me hands-on experience with vehicle communication protocols, real-time embedded systems, and cross-functional team collaboration. Managing the integration of hardware and software while working with a team of 60+ engineers has significantly strengthened my project management and technical skills.</p>
+            </div>
+            
+            <div class="modal-links">
+                <a href="https://etruck.webflow.io/" target="_blank" class="btn btn-primary">Visit E-Truck Website</a>
+            </div>
+        </div>
+    </div> 
+
+        <!-- Modal for Project 2 -->
+    <div id="project2" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project2')">&times;</span>
+            
+            <h2>CAN-Based Fan Control System</h2>
+            
+            <div class="modal-tags">
+                <span class="tag">CANalyzer</span>
+                <span class="tag">Raptor Dev</span>
+                <span class="tag">Simulink</span>
+                <span class="tag">ECUs</span>
+                <span class="tag">CANdb++</span>    
+            </div>
+            
+            <!-- Video at the top -->
+            <div class="modal-video-container">
+                <video controls class="modal-video">
+                    <source src="videos/project2-demo.mov" type="video/mp4">
+                    Your browser doesn't support video.
+                </video>
+            </div>
+            
+            <div class="modal-body">
+                <h3>Goal</h3>
+                <p>The objective of this project was to validate the reliability of a CAN bus network for distributed control of multiple vehicle subsystems. This initial development phase focused on establishing deterministic communication between multiple ECUs while using a tablet-based interface as the vehicle’s central control console.
+                The system was designed as a scalable foundation for future expansion, enabling additional devices and control logic to be integrated into the network as the project progressed.</p>
+                
+                <h3>How: </h3>
+                <p>
+                    I successfully met the project objectives by developing a structured DBC file to define and organize all CAN signals transmitted to the fan ECU, ensuring consistent signal scaling, encoding, and interpretation across the network.
+                    </p>
+
+                    <p>
+                    To validate end-to-end control, I implemented a CAPL script within CANalyzer to command fan operation using keyboard inputs, enabling rapid functional verification of CAN message transmission and ECU response.
+                    </p>
+
+                    <p>
+                    My design philosophy emphasized incremental system complexity. After completing the physical wiring and verifying communication reliability through SIL-style testing with simulated control logic, I introduced analog human input by applying a 5&nbsp;V reference across a potentiometer.
+                    </p>
+
+                    <p>
+                    The resulting analog signal was read by the ECU and processed through Simulink-based control logic, enabling real-time fan control driven by human input. This staged approach ensured signal integrity, control stability, and repeatable system behavior before advancing to higher-level integration.
+                    </p>
+                
+                <h3>Challenges & Solutions</h3>
+                <p>
+                A major challenge during development was managing the system wiring and diagnosing intermittent failures during initial bring-up. Many of these issues were traced back to improper grounding, which resulted in inconsistent voltage references and unpredictable ECU behavior.
+                </p>
+
+                <p>
+                I addressed these problems through methodical electrical debugging, using a multimeter to verify ground integrity and measure voltage differentials throughout the system. Establishing a consistent ground reference was essential to achieving reliable operation.
+                </p>
+
+                <h3>Future Vision</h3>
+                <p>
+                    Future work will focus on extending this control architecture to a Samsung tablet-based interface serving as the vehicle’s center console. Current testing uses a conventional Ethernet link to communicate with the ECU, allowing early validation of the communication pathway and user interface behavior.
+                    </p>
+
+                    <p>
+                    Once the appropriate hardware is available, the system will transition from standard Ethernet to automotive Ethernet, enabling robust, in-vehicle communication between the tablet and ECU. This will allow similar CAN-controlled devices to be monitored and commanded through a tablet interface, supporting a scalable and production-oriented HMI architecture.
+                    </p>
+            </div>
+            
+            <div class="modal-links">
+                <a href="#" class="btn btn-primary">View on GitHub</a>
+            </div>
+        </div>
+    </div> 
+
+
+        <!-- Modal for Project 3 -->
+    <div id="project3" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project3')">&times;</span>
+
+            <h2>Cabin Test Bench</h2>
+
+            <div class="modal-tags">
+                <span class="tag">MATLAB</span>
+                <span class="tag">Simulink</span>
+                <span class="tag">HIL/SIL</span>
+            </div>
+
+            <!-- Carousel (images + video) -->
+            <div class="modal-carousel">
+                <button class="carousel-btn prev" onclick="changeSlide('project3', -1)">‹</button>
+
+                <div class="carousel-images">
+                    <!-- Image 1 -->
+                    <img src="images/project3-1.jpg"
+                        class="carousel-image active"
+                        alt="Cabin test bench overview">
+
+                    <!-- Image 2 -->
+                    <img src="images/project3-2.jpg"
+                        class="carousel-image"
+                        alt="Wiring and controls"> 
+
+                        <!-- Image 3 -->
+                    <img src="images/project3 (1).png"
+                        class="carousel-image"
+                        alt="Additional test bench view">
+                                        
+
+                    <!-- Video -->
+                    <video class="carousel-image"
+                        controls>
+                        <source src="videos/project3-demo.mov" type="video/mp4">
+                    </video>
+                </div>
+
+                <button class="carousel-btn next" onclick="changeSlide('project3', 1)">›</button>
+
+                <!-- Dots -->
+                <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide('project3', 0)"></span>
+                <span class="dot" onclick="currentSlide('project3', 1)"></span>
+                <span class="dot" onclick="currentSlide('project3', 2)"></span>
+                <span class="dot" onclick="currentSlide('project3', 3)"></span>
+
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <h3>Goal</h3>
+                <p>
+                The objective of this project was to reverse-engineer the truck’s steering column controls, including the windshield wipers, high beams, turn signals, and hazard lights, in order to replicate their functionality within a custom control system. Due to the lack of available documentation, the system behavior had to be characterized experimentally rather than referenced from existing schematics.
+                </p>
+
+
+
+                <h3>How</h3>
+                <p>
+                The process began by analyzing the implementation of the steering stalk controls through systematic continuity testing of the associated wiring harness. By measuring continuity across different wire combinations, we were able to identify ground references and infer which conductors corresponded to specific control functions. Based on these findings, a simple validation circuit was constructed to confirm the observed behavior before proceeding with further integration.
+                </p>
+
+                <h3>Vision</h3>
+                <p>
+                In the coming weeks, the focus will shift toward establishing communication between the dashboard and the vehicle ECU, enabling real-time vehicle state data to be received and displayed on the instrument cluster.
+                </p>
+
+                <p>
+                The voltage differentials identified in the steering stalk during reverse-engineering will be used as analog inputs to drive control logic for both dashboard indicators and the corresponding exterior vehicle signals, such as turn indicators.
+                </p>
+
+                <p>
+                From this foundation, system complexity will be incrementally expanded to incorporate additional steering column and cabin controls required for reliable and intuitive vehicle operation.
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <div class="skills-grid">
+            
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>MATLAB</li>
+                    <li>Java</li>
+                    <li>Simulink</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>Control Systems</h4>
+                <ul>
+                    <li>PID Controllers</li>
+                    <li>Raptor Dev Tools</li>
+                    <li>Simulink</li>
+                    <li>System Modeling</li>
+                    <li>J1939 Protocol</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>Tools & Software</h4>
+                <ul>
+                    <li>MATLAB/Simulink</li>
+                    <li>Altium Designer</li>
+                    <li>KiCad</li>
+                    <li>Git/GitHub</li>
+                    <li>Oscilloscope</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h4>Additional Skills</h4>
+                <ul>
+                    <li>Data Acquisition</li>
+                    <li>Motor Control</li>
+                    <li>Sensor Integration</li>
+                    <li>Real-Time Systems</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="resume-download">
+            <a href="files/resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <p>Interested in working together or have questions? Feel free to reach out!</p>
+            
+            <div class="contact-links">
+            <a href="javascript:void(0)"
+            class="contact-link"
+            onclick="copyEmail()">
+                <div class="contact-icon">✉️</div>
+                <span>Email</span>
+                </a>
+                
+                <a href="https://linkedin.com/in/aayush-aryaman-sinha" target="_blank" class="contact-link">
+                    <div class="contact-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://github.com/goldenboy123868" target="_blank" class="contact-link">
+                    <div class="contact-icon">💻</div>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aayush Sinha. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <div id="toast" class="toast">
+    Email copied to clipboard
+</div>
+</body>
+</html>
